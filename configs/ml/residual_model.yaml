@@ -1,0 +1,22 @@
+model:
+  type: GradientBoostingRegressor
+  n_estimators: 300
+  learning_rate: 0.05
+  max_depth: 5
+  random_state: 42
+
+features:
+  - ghi
+  - temperature
+  - wind_speed
+  - humidity
+  - season_sin
+  - season_cos
+  - hour_sin
+  - hour_cos
+
+target: residual_kwh
+
+validation:
+  cv_folds: 5
+  metrics: [rmse, mae, r2]

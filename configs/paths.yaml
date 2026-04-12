@@ -1,0 +1,15 @@
+data:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+  feature_store: data/feature_store
+  external: data/external
+  artifacts: data/artifacts
+  registry: data/registry
+
+models:
+  registry: data/registry/model_versions
+
+reports:
+  output: data/artifacts/reports
+  figures: data/artifacts/figures

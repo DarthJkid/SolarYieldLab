@@ -1,0 +1,30 @@
+{
+  "station_info": {
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "elev": 10.0
+  },
+  "inputs": {
+    "system_capacity": 1.0,
+    "tilt": 20.0,
+    "azimuth": 180.0
+  },
+  "outputs": {
+    "ac_monthly": [
+      50.0,
+      60.0,
+      90.0,
+      110.0,
+      130.0,
+      140.0,
+      145.0,
+      135.0,
+      100.0,
+      70.0,
+      45.0,
+      40.0
+    ],
+    "ac_annual": 1115.0,
+    "capacity_factor": 12.7
+  }
+}

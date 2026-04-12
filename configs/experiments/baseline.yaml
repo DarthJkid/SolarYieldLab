@@ -1,0 +1,10 @@
+experiment:
+  name: baseline
+  description: "Baseline PV yield simulation using primary sources"
+  sources: [nasa_power, pvwatts]
+  sites_file: tests/fixtures/sample_sites.csv
+  simulation:
+    tilt: 20
+    azimuth: 180
+    losses: 14
+  metrics: [annual_yield, capacity_factor, rmse_vs_observed]

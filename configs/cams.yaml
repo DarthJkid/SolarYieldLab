@@ -1,0 +1,7 @@
+cams:
+  base_url: "https://ads.atmosphere.copernicus.eu/api/v2"
+  dataset: cams-solar-radiation-timeseries
+  sky_type: observed_cloud
+  altitude: -999
+  time_step: PT01H
+  format: csv

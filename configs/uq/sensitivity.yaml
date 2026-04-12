@@ -1,0 +1,16 @@
+sensitivity:
+  method: sobol
+  n_samples: 1024
+  calc_second_order: true
+
+parameters:
+  - name: ghi
+    distribution: normal
+    sigma_pct: 5
+  - name: temperature
+    distribution: normal
+    sigma_c: 2
+  - name: system_losses
+    distribution: uniform
+    low: 10
+    high: 20

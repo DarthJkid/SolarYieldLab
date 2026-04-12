@@ -1,0 +1,10 @@
+app:
+  name: SolarYieldLab
+  version: "0.1.0"
+  env: development
+  debug: false
+
+ui:
+  default_map_zoom: 5
+  max_sites_displayed: 500
+  chart_height: 450

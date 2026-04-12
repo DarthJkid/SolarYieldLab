@@ -1,0 +1,16 @@
+model:
+  type: IsolationForest
+  contamination: 0.05
+  n_estimators: 200
+  max_samples: auto
+  random_state: 42
+
+features:
+  - residual_norm
+  - performance_ratio_proxy
+  - temp_corrected_yield
+  - rolling_mean_7d
+
+threshold:
+  method: percentile
+  value: 95

@@ -1,0 +1,4 @@
+site_id,name,lat,lon,capacity_kw,tilt,azimuth
+SITE001,Solar Farm Alpha,51.5074,-0.1278,500.0,20.0,180.0
+SITE002,Solar Farm Beta,48.8566,2.3522,250.0,25.0,175.0
+SITE003,Solar Farm Gamma,40.4168,-3.7038,750.0,30.0,185.0

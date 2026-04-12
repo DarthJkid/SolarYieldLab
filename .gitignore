@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+*.egg
+
+# Environment
+.env
+
+# Node
+node_modules/
+
+# macOS
+.DS_Store
+
+# MLflow
+mlruns/
+
+# Data directories (tracked via .gitkeep)
+data/raw/
+data/interim/
+data/processed/
+data/feature_store/
+
+# Logs
+*.log
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# App cache
+data/artifacts/app_cache/

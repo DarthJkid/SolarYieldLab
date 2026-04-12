@@ -1,0 +1,7 @@
+experiment:
+  name: global_screening
+  description: "Multi-source global resource screening"
+  sources: [nasa_power, pvgis, era5, cams]
+  n_sites: 1000
+  sampling: stratified_by_climate_zone
+  metrics: [source_agreement_ghi, cv_annual_ghi, p90_yield]
