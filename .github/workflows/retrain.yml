@@ -1,0 +1,27 @@
+name: Model Retrain
+
+on:
+  schedule:
+    - cron: "0 3 * * 1"  # Weekly Monday 03:00 UTC
+  workflow_dispatch:
+    inputs:
+      force_retrain:
+        description: "Force retraining regardless of drift"
+        required: false
+        default: "false"
+
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Run retraining pipeline
+        run: python scripts/train_models.py
+        env:
+          MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}

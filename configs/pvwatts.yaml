@@ -1,0 +1,10 @@
+pvwatts:
+  base_url: "https://developer.nrel.gov/api/pvwatts/v8.json"
+  system_capacity: 1.0
+  module_type: 1
+  losses: 14
+  array_type: 1
+  tilt: 20
+  azimuth: 180
+  timeframe: hourly
+  timeout_seconds: 30

@@ -1,0 +1,12 @@
+monte_carlo:
+  n_samples: 10000
+  random_seed: 42
+
+uncertainty_sources:
+  ghi_uncertainty_pct: 5.0
+  temperature_uncertainty_c: 1.5
+  system_losses_uncertainty_pct: 2.0
+  degradation_rate_uncertainty_pct: 0.5
+
+output:
+  percentiles: [5, 25, 50, 75, 95]

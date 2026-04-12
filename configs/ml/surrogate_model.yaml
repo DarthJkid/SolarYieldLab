@@ -1,0 +1,19 @@
+model:
+  type: RandomForestRegressor
+  n_estimators: 500
+  max_features: sqrt
+  random_state: 42
+
+features:
+  - annual_ghi
+  - latitude
+  - elevation
+  - tilt
+  - azimuth
+  - system_capacity_kw
+
+target: annual_yield_kwh
+
+validation:
+  cv_folds: 5
+  metrics: [rmse, mae, r2]

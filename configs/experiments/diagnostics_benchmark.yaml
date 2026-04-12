@@ -1,0 +1,8 @@
+experiment:
+  name: diagnostics_benchmark
+  description: "Benchmark anomaly detection methods"
+  models: [isolation_forest, local_outlier_factor, autoencoder]
+  evaluation:
+    precision_at_k: [10, 50, 100]
+    recall: true
+    f1: true

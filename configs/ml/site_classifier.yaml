@@ -1,0 +1,17 @@
+model:
+  type: RandomForestClassifier
+  n_estimators: 200
+  max_depth: 10
+  random_state: 42
+
+classes:
+  - high_resource
+  - medium_resource
+  - low_resource
+
+features:
+  - annual_ghi
+  - cv_ghi
+  - latitude_abs
+  - elevation
+  - climate_zone_encoded

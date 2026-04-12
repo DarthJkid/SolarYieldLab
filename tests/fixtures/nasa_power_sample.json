@@ -1,0 +1,32 @@
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [
+      -0.1278,
+      51.5074,
+      0
+    ]
+  },
+  "properties": {
+    "parameter": {
+      "ALLSKY_SFC_SW_DWN": {
+        "20230101": {
+          "0": 0.0,
+          "12": 250.5,
+          "13": 280.1
+        }
+      },
+      "T2M": {
+        "20230101": {
+          "0": 5.2,
+          "12": 12.3,
+          "13": 13.1
+        }
+      }
+    }
+  },
+  "header": {
+    "title": "NASA/POWER CERES/MERRA2 Native Resolution Hourly Data"
+  }
+}

@@ -1,0 +1,14 @@
+nasa_power:
+  base_url: "https://power.larc.nasa.gov/api/temporal"
+  community: RE
+  parameters:
+    - ALLSKY_SFC_SW_DWN
+    - CLRSKY_SFC_SW_DWN
+    - T2M
+    - WS10M
+    - RH2M
+    - PRECTOTCORR
+  temporal_average: hourly
+  format: JSON
+  timeout_seconds: 30
+  max_retries: 3

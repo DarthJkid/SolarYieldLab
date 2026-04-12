@@ -1,0 +1,9 @@
+nsrdb:
+  base_url: "https://developer.nrel.gov/api/nsrdb/v2/solar/psm3-download.csv"
+  interval: 60
+  utc: true
+  full_name: "SolarYieldLab User"
+  email: "user@example.com"
+  affiliation: "SolarYieldLab"
+  reason: "Research"
+  mailing_list: false

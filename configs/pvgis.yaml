@@ -1,0 +1,8 @@
+pvgis:
+  base_url: "https://re.jrc.ec.europa.eu/api/v5_2"
+  pvtechchoice: crystSi
+  mountingplace: free
+  loss: 14
+  outputformat: json
+  usehorizon: 1
+  timeout_seconds: 30
