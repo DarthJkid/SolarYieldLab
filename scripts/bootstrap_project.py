@@ -1,10 +1,5 @@
 """Bootstrap the project: create required directories."""
-import sys
 from pathlib import Path
-
-PROJECT_ROOT_DIR = Path(__file__).resolve().parents[1]
-if str(PROJECT_ROOT_DIR) not in sys.path:
-    sys.path.insert(0, str(PROJECT_ROOT_DIR))
 
 from src.config.paths import ensure_directories, PROJECT_ROOT
 from src.utils.logging_utils import get_logger
