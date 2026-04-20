@@ -1,9 +1,13 @@
 """Run PV yield simulation for one or more sites."""
-import argparse
+from src.utils.logging_utils import get_logger
+
+logger = get_logger(__name__)
 
 
 def main() -> None:
-    print('Simulation not yet implemented.')
+    logger.info("Simulation runner started.")
+    logger.info("No simulation logic has been connected yet.")
+    logger.info("Next step: add NASA POWER and PVWatts clients.")
 
 
 if __name__ == "__main__":

@@ -1,23 +1,19 @@
 """SolarYieldLab — Streamlit Home Page."""
 import streamlit as st
-from app.components.layout import configure_page
-from app.state.session_state import initialise_session_state
 
-configure_page(title="SolarYieldLab", icon="☀️")
-initialise_session_state()
+st.set_page_config(
+    page_title="SolarYieldLab",
+    page_icon="☀️",
+    layout="wide",
+)
 
-st.title("☀️ SolarYieldLab")
-st.markdown(
+st.title("SolarYieldLab")
+st.write(
     """
-    **SolarYieldLab** is an integrated platform for solar yield simulation,
-    diagnostics, and research.
+    SolarYieldLab is a research-grade solar resource, PV simulation,
+    diagnostics, and analytics platform.
 
-    ### Navigation
-    Use the sidebar to access:
-    - 🗺️ **Site Explorer** — browse and manage solar sites
-    - ⚙️ **System Designer** — configure PV system parameters
-    - 📈 **Yield Simulator** — run multi-source simulations
-    - 🔍 **Diagnostics** — anomaly detection and fault analysis
-    - 🔬 **Research Dashboard** — cross-source comparison and uncertainty
+    This is the initial project shell. Core data ingestion and simulation
+    modules will be connected next.
     """
 )
